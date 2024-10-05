@@ -56,4 +56,16 @@ class UserDbMethods implements DbMethods<UserModel> {
       'CREATE TABLE IF NOT EXISTS ${TextConstants.userTable} ($columnDefinitions)',
     );
   }
+
+  @override
+  Future<void> update(UserModel user) async {
+    Map<String, dynamic> updatedValues = user.toMap();
+    updatedValues.remove(TextConstants.userId);
+    await _db.update(
+      TextConstants.userTable,
+      updatedValues,
+      where: '${TextConstants.userId} = ?',
+      whereArgs: [user.id],
+    );
+  }
 }
