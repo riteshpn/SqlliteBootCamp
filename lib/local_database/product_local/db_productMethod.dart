@@ -21,7 +21,7 @@ class DbProduct implements DbMethods<ProductModel> {
   @override
   Future<void> insertData(ProductModel product) async {
     await _db.insert(
-      TextConstantsProduct.productName,
+      TextConstantsProduct.productTable,
       product.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
       nullColumnHack: "",

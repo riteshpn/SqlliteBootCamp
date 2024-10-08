@@ -1,30 +1,3 @@
-// class ProductModel {
-//   final String name;
-//   final int price;
-//   final String description;
-
-//   ProductModel({
-//     required this.name,
-//     required this.price,
-//     required this.description,
-//   });
-
-//   Map<String, dynamic> toMap() {
-//     return {
-//       'name': name,
-//       'price': price,
-//       'description': description,
-//     };
-//   }
-
-//   factory ProductModel.fromMap(Map<String, dynamic> map) {
-//     return ProductModel(
-//       name: map['name'],
-//       price: map['price'],
-//       description: map['description'],
-//     );
-//   }
-// }
 class ProductModel {
   final int? id;
   final String name;
@@ -42,7 +15,7 @@ class ProductModel {
   Map<String, dynamic> toMap() {
     return {
       'id': id,
-      'name': name,
+      'product': name, 
       'price': price,
       'description': description,
     };
@@ -52,7 +25,7 @@ class ProductModel {
   factory ProductModel.fromMap(Map<String, dynamic> map) {
     return ProductModel(
       id: map['id'],
-      name: map['name'],
+      name: map['product'],
       price: map['price'],
       description: map['description'],
     );

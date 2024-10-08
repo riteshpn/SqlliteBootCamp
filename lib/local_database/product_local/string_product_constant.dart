@@ -1,9 +1,9 @@
 class StringConstantsProduct {
   static const String addProductTitle = 'Add Product';
   static const String nameLabel = 'Name';
-  static const String ageLabel = 'Age';
-  static const String saveButton = 'Save User';
-  static const String nameError = 'Please enter a name';
+  static const String ageLabel = 'Price';
+  static const String saveButton = 'Save product';
+  static const String nameError = 'Please enter a product';
   static const String ageError = 'Please enter a valid number';
   static const String ageLimitError = 'Age must be below or equal to 100';
 }
