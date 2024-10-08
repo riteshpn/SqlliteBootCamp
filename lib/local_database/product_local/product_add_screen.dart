@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_responsive/local_database/local_screen.dart';
 import 'package:widgets_responsive/local_database/product_local/db_productMethod.dart';
-import 'package:widgets_responsive/local_database/product_local/procuct_list_screen.dart';
 import 'package:widgets_responsive/local_database/product_local/product/product_list_ui.dart';
 import 'package:widgets_responsive/local_database/product_local/product_model.dart';
-import 'package:widgets_responsive/local_database/string_constant.dart';
+
 import 'package:widgets_responsive/local_database/validation_helper.dart';
 
 class ProductAddScreen extends StatefulWidget {
